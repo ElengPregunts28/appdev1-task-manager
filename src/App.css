@@ -11,12 +11,10 @@
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.link:hover {
+  filter: drop-shadow(0 0 5em #63639baa);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+
 
 @keyframes logo-spin {
   from {
@@ -50,10 +48,13 @@
   font-size: 16px; 
   transition: background-color 0.3s; 
   margin: 5px;
+  transition: transform 0.3s ease-in-out;
 } 
 
 .add-button:hover { 
   background-color: #45a049; 
+  color: antiquewhite;
+  transform: scale(1.1);
 }
 
 .remove-button { 
@@ -65,10 +66,13 @@
   font-size: 16px; 
   transition: background-color 0.3s;
   margin: 10px;
+  transition: transform 0.3s ease-in-out;
 } 
 
 .remove-button:hover { 
   background-color: red; 
+  color: antiquewhite;
+  transform: scale(1.1);
 }
 
 .user-input { 
@@ -93,4 +97,55 @@
   
 .pending-task { 
   color: black; 
+}
+
+.sign-in {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sign-in-google {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sign-up {
+  margin-top: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.center {
+  margin: auto;
+}
+
+.box {
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  margin: center;
+}
+
+.exit {
+  margin: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sign-in:hover, .sign-in-google:hover, .sign-up:hover, .exit:hover {
+  background-color: #1a1a1a;
+  color: antiquewhite;
+  transform: scale(1.1);
+}
+
+.link{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: text-shadow 0.3s;
+}
+
+.link:hover{
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
